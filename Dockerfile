@@ -36,4 +36,4 @@ COPY --from=build /build/telegram-bot-api/bin/telegram-bot-api /app/
 
 EXPOSE 8081
 
-CMD ["./telegram-bot-api", "--local"]
+CMD ["./telegram-bot-api", "--dir=/data", "--local", "--dir=/data"]
