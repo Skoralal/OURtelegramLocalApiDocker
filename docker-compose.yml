@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  telegram-api:
+    build: .
+    container_name: telegram-api
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
+    enviroment:
+      TELEGRAM_API_ID:
+      TELEGRAM_API_HASH: 
